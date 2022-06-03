@@ -18,11 +18,11 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 
 <img src="img\Menus.png"/>
 
-<p>Une zone d'affichage des différentes données</p>
+<p>Zone d'affichage des différentes données</p>
 
 <img src="img\Datas.png"/>
 
-<p>Une partie pour altérer ces données, en ajouter de nouvelles ou en supprimer</p>
+<p>Interface pour modifier, ajouter, ou supprimer des données</p>
 
 <img src="img\Form.png"/>
 
