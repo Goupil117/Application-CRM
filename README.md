@@ -7,7 +7,7 @@
 
 <h2 id="presentation">Présentation de l'application</h2>
 
-<p>L'application CRM Lourde est une application de type Windows permettant l’ajout, la modification<br>
+<p>L'application CRM Lourde est une application de type Windows développer en C# avec le framework WPF, permettant l’ajout, la modification<br>
 et la Suppression des clients, des prospects, des rendez-vous et la visualisation des factures.</p>
 
 <p>Voici son interface principale</p>
