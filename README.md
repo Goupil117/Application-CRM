@@ -48,10 +48,12 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
     <li>MySql_Database</li>
 </ul>
 
-<h4>Contructeur de la classe Client</h4>
+</br>
+
+<h4>Contructeur de la classe Client :</h4>
 
 ```
-		public Client()
+	public Client()
         {
 
         }
@@ -85,7 +87,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
         }
 ```
 
-<h4>Contructeur de la classe Commercial</h4>
+<h4>Contructeur de la classe Commercial :</h4>
 ```
         public Commercial()
         {
@@ -115,7 +117,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
         }
 ```
 
-<h4>Contructeur de la classe Commercial</h4>
+<h4>Contructeur de la classe Commercial :</h4>
 ```
         public Contact()
         {
@@ -151,7 +153,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
         }
 ```
 
-<h4>Contructeur de la classe Prospects</h4>
+<h4>Contructeur de la classe Prospects :</h4>
 ```
         public Prospect()
         {
@@ -192,6 +194,140 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
             Code_Postal = code_postal;
         }
 ```
+
+<h4>Contructeur de la classe Produit :</h4>
+```
+	public Produit()
+        {
+
+        }
+
+        public Produit(string nom, string description, double prix)
+        {
+            Nom = nom;
+            Prix = prix;
+            Description = description;
+        }
+
+        public Produit(int id, string nom, string description, double prix)
+        {
+            Id = id;
+            Nom = nom;
+            Prix = prix;
+            Description = description;
+        }
+```
+
+<h4>Contructeur de la classe Facture :</h4>
+```
+	public Facture()
+        {
+
+        }
+
+        public Facture(int id)
+        {
+            Id = id;
+        }
+
+        public Facture(int id, Client client, Produit produit, int quantite, DateTime date, double montant)
+        {
+            Id = id;
+            Client = client;
+            Produit = produit;
+            Quantite = quantite;
+            Date = date;
+            Montant = montant;
+        }
+
+        public Facture(Client client, Produit produit, int quantite, DateTime date, double montant)
+        {
+            Client = client;
+            Produit = produit;
+            Quantite = quantite;
+            Date = date;
+            Montant = montant;
+        }
+```
+
+<h4>Contructeur de la classe Rendez-vous :</h4>
+```
+ 	public Rendez_Vous()
+        {
+
+        }
+        public Rendez_Vous(int id, DateTime date, Commercial commercial, Contact contact, string lieux)
+        {
+            Id = id;
+            Date = date;
+            Commercial = commercial;
+            Contact = contact;
+            Lieux = lieux;
+        }
+
+        public Rendez_Vous(DateTime date, Commercial commercial, Contact contact, string lieux)
+        {
+            Date = date;
+            Commercial = commercial;
+            Contact = contact;
+            Lieux = lieux;
+        }
+```
+
+<h4>Contructeur de la classe Contact :</h4>
+```
+        public Contact()
+        {
+
+        }
+
+        public Contact(int id)
+        {
+            Id = id;
+        }
+
+        public Contact(string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+
+        public Contact(int id, string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Id = id;
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+```
+
+<h4>Contructeur de la classe MySql_Database :</h4>
+```
+	public MySql_Database()
+        {
+            Connexion_BD();
+        }
+
+        public MySql_Database(string Serveur, string User, string Password, string DataBase)
+        {
+            serveur = Serveur;
+            user = User;
+            password = Password;
+            database = DataBase;
+
+            Connexion_BD();
+        }
+```
+
 
 <p>Elle récupère les informations de la base de données utilisant cette méthode</p>
 
