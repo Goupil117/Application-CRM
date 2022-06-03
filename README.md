@@ -37,16 +37,16 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 
 <h3>Classe présente dans l'application</h3>
 
-<li>
-    <ul>Client</ul>
-    <ul>Commercial</ul>
-    <ul>Prospect</ul>
-    <ul>Produit</ul>
-    <ul>Facture</ul>
-    <ul>Rendez-vous</ul>
-    <ul>Contact</ul>
-    <ul>MySql_Database</ul>
-</li>
+<ul>
+    <li>Client</li>
+    <li>Commercial</li>
+    <li>Prospect</li>
+    <li>Produit</li>
+    <li>Facture</li>
+    <li>Rendez-vous</li>
+    <li>Contact</li>
+    <li>MySql_Database</li>
+</ul>
 
 <h4>Contructeur de la classe Client</h4>
 
