@@ -277,7 +277,9 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Contact :</h4>
+
 ```
+
         public Contact()
         {
 
