@@ -26,42 +26,171 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 
 <img src="img\Form.png"/>
 
-<p>Ainsi qu'une partie de paramètres pour modifier ses identifiants ou ceux de la base de données utilisée</p>
+<p>Zone de paramètres pour changer la base de données utilisée</p>
 
 <img src="img\Settings.png"/>
 
 <h2 id="docs">Documentation développeur</h2>
 
-<p>L'application a été développée en langage C# utilisant le mode WPF<br>
+<p>L'application a été développée en langage C# utilisant le framework WPF<br>
 à l'aide du logiciel Visual Studio 2019 développé par Microsoft.</p>
-<p>Elle possède plusieurs classes construites comme ceci.</p>
+
+<h3>Classe présente dans l'application</h3>
+
+<li>
+    <ul>Client</ul>
+    <ul>Commercial</ul>
+    <ul>Prospect</ul>
+    <ul>Produit</ul>
+    <ul>Facture</ul>
+    <ul>Rendez-vous</ul>
+    <ul>Contact</ul>
+    <ul>MySql_Database</ul>
+</li>
+
+<h4>Contructeur de la classe Client</h4>
 
 ```
-    public class Example
-    {
-
-        private int _Number;
-        private string _Text;
-
-        public Produits(int Number, string Text)
+		public Client()
         {
-            Number = _Number;
-            Text = _Text;
+
         }
 
-        public string Number
+		public Client(int id)
         {
-            get { return _Number; }
-            set { _Number = value; }
+			Id = id;
         }
 
-        public string Text
+		public Client(string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
         {
-            get { return _Text; }
-            set { _Text = value; }
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
         }
 
-    }
+        public Client(int id, string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Id = id;
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+```
+
+<h4>Contructeur de la classe Commercial</h4>
+```
+        public Commercial()
+        {
+
+        }
+
+        public Commercial(int id)
+        {
+            Id = id;
+        }
+
+        public Commercial(string nom, string prenom, string telephone, string email)
+        {
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+        }
+
+        public Commercial(int id, string nom, string prenom, string telephone, string email)
+        {
+            Id = id;
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+        }
+```
+
+<h4>Contructeur de la classe Commercial</h4>
+```
+        public Contact()
+        {
+
+        }
+
+        public Contact(int id)
+        {
+            Id = id;
+        }
+
+        public Contact(string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+
+        public Contact(int id, string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Id = id;
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+```
+
+<h4>Contructeur de la classe Prospects</h4>
+```
+        public Prospect()
+        {
+
+        }
+
+        public Prospect(int id)
+        {
+            Id = id;
+        }
+
+        public Prospect(string nom, string prenom)
+        {
+            Nom = nom;
+            Prenom = prenom;
+        }
+
+        public Prospect(string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
+
+        public Prospect(int id, string nom, string prenom, string telephone, string email, string adresse, string ville, string code_postal)
+        {
+            Id = id;
+            Nom = nom;
+            Prenom = prenom;
+            Telephone = telephone;
+            Email = email;
+            Adresse = adresse;
+            Ville = ville;
+            Code_Postal = code_postal;
+        }
 ```
 
 <p>Elle récupère les informations de la base de données utilisant cette méthode</p>
