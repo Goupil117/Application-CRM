@@ -120,6 +120,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Commercial :</h4>
+
 ```
         public Contact()
         {
@@ -156,6 +157,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Prospects :</h4>
+
 ```
         public Prospect()
         {
@@ -198,6 +200,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Produit :</h4>
+
 ```
 	public Produit()
         {
@@ -221,6 +224,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Facture :</h4>
+
 ```
 	public Facture()
         {
@@ -253,6 +257,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe Rendez-vous :</h4>
+
 ```
  	public Rendez_Vous()
         {
@@ -315,6 +320,7 @@ et la Suppression des clients, des prospects, des rendez-vous et la visualisatio
 ```
 
 <h4>Contructeur de la classe MySql_Database :</h4>
+
 ```
 	public MySql_Database()
         {
